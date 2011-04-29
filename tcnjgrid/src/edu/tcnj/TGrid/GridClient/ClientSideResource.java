@@ -107,6 +107,7 @@ public class ClientSideResource implements ConnectionToRemoteHostEventListener, 
      * Number of processors on the resource
      * spring 2011
      */
+    protected String freeDisk;
     protected String cpusAvailable = Integer.toString(Runtime.getRuntime().availableProcessors());
     /**
      * A reliability and performance score for this Resource, calculated 
@@ -216,6 +217,23 @@ public class ClientSideResource implements ConnectionToRemoteHostEventListener, 
         this.clientKey = clientKey;
         this.clientPswd = clientPswd;
 
+        //This is because there really is not a good way
+        //to get disk space cross platform with java
+        //so we have to do some guessing
+        File[] roots = File.listRoots();
+        long space = 0;
+        //loop through and look for the most free space
+        //windows can have many drives and act funny
+        for (int i = 0; i < roots.length; i++) {
+            if(roots[i].getUsableSpace() > space){
+                //assume that the largest free space is the
+                //drive we want
+                space = roots[i].getUsableSpace();
+            }
+        }
+        
+        freeDisk = Long.toString(space);
+
         connectionToServer.addRemoteHostEventListener(this);
         //commandConnectionToServer.addRemoteHostEventListener(this);
     }
@@ -224,17 +242,19 @@ public class ClientSideResource implements ConnectionToRemoteHostEventListener, 
      * Returns the OS of the client, the total Ram to the jvm, the free Ram to jvm
      * and returns it as a string
      *
-     * Shane Banning Spring 2011
+     * Spring 2011
      */
     public String getSpecs() {
-        return "OS version " + nameOS + "\nTotal Ram: " + totalRAM + "\nFree Ram: " + freeRAM + "\nCPUs Available: " + cpusAvailable;
+        return "OS version " + nameOS + "\nTotal Ram: " + totalRAM + 
+                "\nFree Ram: " + freeRAM + "\nFree Space: " + freeDisk +
+                "CPUs Available: " + cpusAvailable;
     }
 
     /*
      * Determines the resource score for this client to be returned to
      * the server. This is just guesswork as to what is useful overall
      *
-     * Shane Banning Spring 2011
+     * Spring 2011
      */
     public void setResourceScore() {
         //compile resource score before sending it and save it

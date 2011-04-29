@@ -48,6 +48,12 @@ public class ClientInfo implements Serializable
         protected String nameOS;
 
         /**
+        * The free space on the system
+         * spring 2011
+        */
+        protected String freeDisk;
+
+        /**
         * Total Ram that is available to the Java Virtual Machine
         * (not total available ram of system!)
          * spring 2011
@@ -150,6 +156,7 @@ public class ClientInfo implements Serializable
 		specs.put("OS", nameOS);
 		specs.put("RAM", totalRAM);
                 specs.put("CPU", cpusAvailable);
+                specs.put("Space", freeDisk);
                 specs.put("Resource Score", resourceScore);
 		
 		return specs;
