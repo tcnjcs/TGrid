@@ -33,6 +33,43 @@ public class ClientInfo implements Serializable
 	 * Directory where the java class files are located
 	 */
 	private String javaClassDir = ".";
+
+        /**
+	 * A reliability and performance score for this Resource, calculated
+	 * based on several factors.  Used primarily for comparisons.
+	 *spring 2011
+	 */
+	protected int resourceScore;
+
+        /**
+        * The Operating System
+         * spring 2011
+        */
+        protected String nameOS;
+
+        /**
+        * Total Ram that is available to the Java Virtual Machine
+        * (not total available ram of system!)
+         * spring 2011
+        */
+        protected String totalRAM;
+
+        /**
+         * Total Free Ram currently able to be used by the Java virtual machine
+         * spring 2011
+         */
+        protected String freeRAM;
+
+         /**
+        * Number of processors on the client
+          * spring 2011
+        */
+        protected String cpusAvailable;
+
+        /*
+         * Track the number of failures a client has
+         */
+        protected int numFailed = 0;
 	
 	/**
 	 * Number of tasks assigned to the client
@@ -65,6 +102,10 @@ public class ClientInfo implements Serializable
 	 * Last error
 	 */
 	private String lastError = "";
+        /**
+	 * Last task time
+	 */
+	private long lastTime = 0;
 	
 	/**
 	 * Default Constructor
@@ -106,11 +147,42 @@ public class ClientInfo implements Serializable
 		if (specs == null)
 			specs = new TreeMap<String, Object>();
 	
-		// TODO: Remove this and add user interface for user to edit client specs.
-		specs.put("OS", "linux");
-		specs.put("RAM", 2048);
+		specs.put("OS", nameOS);
+		specs.put("RAM", totalRAM);
+                specs.put("CPU", cpusAvailable);
+                specs.put("Resource Score", resourceScore);
 		
 		return specs;
+	}
+
+        /**
+	 * Sets the OS of the client
+	 *
+	 * @param hostname Hostname or IP address of the client
+	 */
+	public void setOS(String os)
+	{
+		this.nameOS = os;
+	}
+
+        /**
+	 * Sets the hostname or IP address of the client
+	 *
+	 * @param hostname Hostname or IP address of the client
+	 */
+	public void setRAM(String ram)
+	{
+		this.totalRAM = ram;
+	}
+
+        /**
+	 * Sets the hostname or IP address of the client
+	 *
+	 * @param hostname Hostname or IP address of the client
+	 */
+	public void setHostname(String hostname)
+	{
+		this.hostname = hostname;
 	}
 	
 	/**
@@ -118,11 +190,20 @@ public class ClientInfo implements Serializable
 	 * 
 	 * @param hostname Hostname or IP address of the client	 	 
 	 */
-	public void setHostname(String hostname)
+	public void setNumCPU(String cpu)
 	{
-		this.hostname = hostname;
+		this.cpusAvailable = cpu;
 	}
-	
+
+        /**
+	 * Sets the hostname or IP address of the client
+	 *
+	 * @param hostname Hostname or IP address of the client
+	 */
+	public void setResourceScore(int score)
+	{
+		this.resourceScore = score;
+	}
 	/**
 	 * Gets the hostname or IP address of the client
 	 * 
@@ -228,10 +309,29 @@ public class ClientInfo implements Serializable
 	{
 		numFailedTasks++;
 	}
+
+        /**
+	 * Set the time for the lastTime
+	 * 
+	 */
+	public void setLastTime(long num)
+	{
+		lastTime = num;
+	}
 	
 	/**
-	 * Gets the number of failed tasks for the client
+	 * Gets the last time of task start
 	 * 
+	 * @return Number of last Time
+	 */
+	public long getLastTime()
+	{
+		return lastTime;
+	}
+
+        /**
+	 * Gets the number of failed tasks for the client
+	 *
 	 * @return Number of tasks that the client failed.
 	 */
 	public int getNumFailedTasks()
