@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/tcnjgrid/!svn/ver/51
+END
+startLocalLinuxClient.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/tcnjgrid/!svn/ver/42/startLocalLinuxClient.sh
+END
+startRemoteLinuxClient.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/tcnjgrid/!svn/ver/33/startRemoteLinuxClient.sh
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/tcnjgrid/!svn/ver/1/manifest.mf
+END
+clients.dat
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/tcnjgrid/!svn/ver/37/clients.dat
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/tcnjgrid/!svn/ver/1/build.xml
+END

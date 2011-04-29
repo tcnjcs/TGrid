@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/tcnjgrid/!svn/ver/43/src/edu/tcnj/TGrid/States
+END
+TaskState.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/tcnjgrid/!svn/ver/1/src/edu/tcnj/TGrid/States/TaskState.java
+END
+SystemState.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/tcnjgrid/!svn/ver/1/src/edu/tcnj/TGrid/States/SystemState.java
+END
+ResourceState.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/tcnjgrid/!svn/ver/43/src/edu/tcnj/TGrid/States/ResourceState.java
+END
+JobState.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tcnjgrid/!svn/ver/1/src/edu/tcnj/TGrid/States/JobState.java
+END
+ConnectionToRemoteHostState.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/tcnjgrid/!svn/ver/1/src/edu/tcnj/TGrid/States/ConnectionToRemoteHostState.java
+END

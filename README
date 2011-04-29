@@ -1,0 +1,15 @@
+To compile, type "ant compile" in the tcnjgrid directory
+Setup SSH authorization key
+Run ssh-keygen -t rsa and leave the passphrase empty.
+Append the generated *.pub file to ~/.ssh/authorized_keys
+You need to do this for every computer running on the grid or else it will ask you to login when loading clients 
+Do one of the following:
+Create a symbolic link named TGridClasses to the build/classes folder in your home directory using ln -s /path/to/build/classes TGridClasses from your home directory.
+Run program and edit each client to change path to class files.
+To run the server program, SSH into a computer and go to the build/classes folder.  Enter
+java edu/tcnj/TGrid/Main -server
+Use default/default to give yourself a login
+Passwords must be over 8 characters long, contain a number, a special character and a capital letter
+Settings can be changed by using the default admin account and  picking 2 at the main menu 
+Enter 1 to start running the server.  This will automatically start the clients.
+The grid will ask you for a value of n, the grid will then calculate the value of n!

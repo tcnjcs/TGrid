@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/tcnjgrid/!svn/ver/44/src/edu/tcnj/TGrid/GridServer
+END
+ServerSideResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/tcnjgrid/!svn/ver/43/src/edu/tcnj/TGrid/GridServer/ServerSideResource.java
+END
+Monitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/tcnjgrid/!svn/ver/44/src/edu/tcnj/TGrid/GridServer/Monitor.java
+END
+ResourceDiscoveryAgent.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/tcnjgrid/!svn/ver/42/src/edu/tcnj/TGrid/GridServer/ResourceDiscoveryAgent.java
+END

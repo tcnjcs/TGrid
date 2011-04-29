@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/tcnjgrid/!svn/ver/51/src/edu/tcnj/TGrid
+END
+users.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/tcnjgrid/!svn/ver/49/src/edu/tcnj/TGrid/users.txt
+END
+FactorialJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tcnjgrid/!svn/ver/42/src/edu/tcnj/TGrid/FactorialJob.java
+END
+TestFileTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tcnjgrid/!svn/ver/17/src/edu/tcnj/TGrid/TestFileTask.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/tcnjgrid/!svn/ver/44/src/edu/tcnj/TGrid/Task.java
+END
+FileTransferInfoToClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/tcnjgrid/!svn/ver/9/src/edu/tcnj/TGrid/FileTransferInfoToClient.java
+END
+JacobsthalTransferTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/tcnjgrid/!svn/ver/28/src/edu/tcnj/TGrid/JacobsthalTransferTask.java
+END
+TestTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/tcnjgrid/!svn/ver/17/src/edu/tcnj/TGrid/TestTask.java
+END
+passwordRequirements.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/tcnjgrid/!svn/ver/40/src/edu/tcnj/TGrid/passwordRequirements.txt
+END
+JacobsthalJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/tcnjgrid/!svn/ver/1/src/edu/tcnj/TGrid/JacobsthalJob.java
+END
+TaskRequirements.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/tcnjgrid/!svn/ver/45/src/edu/tcnj/TGrid/TaskRequirements.java
+END
+FileTransferTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/tcnjgrid/!svn/ver/9/src/edu/tcnj/TGrid/FileTransferTask.java
+END
+RequirementsChecker.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/tcnjgrid/!svn/ver/46/src/edu/tcnj/TGrid/RequirementsChecker.java
+END
+JacobsthalTransferJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/tcnjgrid/!svn/ver/28/src/edu/tcnj/TGrid/JacobsthalTransferJob.java
+END
+Job.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/tcnjgrid/!svn/ver/1/src/edu/tcnj/TGrid/Job.java
+END
+TestFileJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tcnjgrid/!svn/ver/9/src/edu/tcnj/TGrid/TestFileJob.java
+END
+TestJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/tcnjgrid/!svn/ver/16/src/edu/tcnj/TGrid/TestJob.java
+END
+ConnectionToRemoteHost.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/tcnjgrid/!svn/ver/42/src/edu/tcnj/TGrid/ConnectionToRemoteHost.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/tcnjgrid/!svn/ver/51/src/edu/tcnj/TGrid/User.java
+END
+BigIntOperationTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/tcnjgrid/!svn/ver/36/src/edu/tcnj/TGrid/BigIntOperationTask.java
+END
+FileTransfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/tcnjgrid/!svn/ver/9/src/edu/tcnj/TGrid/FileTransfer.java
+END
+Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/tcnjgrid/!svn/ver/50/src/edu/tcnj/TGrid/Main.java
+END
+TransferFileRemoteDirectory.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/tcnjgrid/!svn/ver/6/src/edu/tcnj/TGrid/TransferFileRemoteDirectory.java
+END
+FactorialTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tcnjgrid/!svn/ver/44/src/edu/tcnj/TGrid/FactorialTask.java
+END
+ClientInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/tcnjgrid/!svn/ver/44/src/edu/tcnj/TGrid/ClientInfo.java
+END
+CommandToServerFromClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/tcnjgrid/!svn/ver/43/src/edu/tcnj/TGrid/CommandToServerFromClient.java
+END
+CommandToClientFromServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/tcnjgrid/!svn/ver/43/src/edu/tcnj/TGrid/CommandToClientFromServer.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/tcnjgrid/!svn/ver/48/src/edu/tcnj/TGrid/Group.java
+END
+MemoryChecker.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/tcnjgrid/!svn/ver/45/src/edu/tcnj/TGrid/MemoryChecker.java
+END
+JacobsthalTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/tcnjgrid/!svn/ver/17/src/edu/tcnj/TGrid/JacobsthalTask.java
+END
